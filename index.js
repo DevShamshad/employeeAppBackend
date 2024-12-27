@@ -8,7 +8,7 @@ const PORT=process.env.PORT || 8000;
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: ['http://localhost:5173'], // allow requests from this origin
+    origin: ['https://bright-moxie-eebd1f.netlify.app/'], // allow requests from this origin
     credentials: true, // allow credentials (e.g. cookies) to be sent
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // allow these methods
     headers: ['Content-Type', 'Authorization'] // allow these headers
